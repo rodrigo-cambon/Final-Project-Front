@@ -1,0 +1,793 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top_right {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.maxWidth {
+  max-width: 4rem;
+}
+/*  Hero */
+.hero {
+  background-image: url("https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-position: center;
+  /*  https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg */
+}
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    /*  https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg */
+  }
+}
+/*  About us */
+.heroA {
+  background-image: url("https://besthqwallpapers.com/Uploads/16-10-2018/68983/microchip-neon-lines-black-background-chips-technology-backgrounds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  background-attachment: fixed;
+  /* https://besthqwallpapers.com/Uploads/16-10-2018/68983/microchip-neon-lines-black-background-chips-technology-backgrounds.jpg */
+}
+@media (max-width: 768px) {
+  .heroA {
+    background-image: url("https://besthqwallpapers.com/Uploads/16-10-2018/68983/microchip-neon-lines-black-background-chips-technology-backgrounds.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    /* https://besthqwallpapers.com/Uploads/16-10-2018/68983/microchip-neon-lines-black-background-chips-technology-backgrounds.jpg */
+  }
+}
+.heroB {
+  background-image: url("https://hrdmxylsfdxhrvmiajpd.supabase.in/storage/v1/object/public/ecommerce/img/MasterHack.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 17rem;
+  background-attachment: fixed;
+  /*  https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg */
+}
+@media (max-width: 768px) {
+  .heroB {
+    background-image: url("https://hrdmxylsfdxhrvmiajpd.supabase.in/storage/v1/object/public/ecommerce/img/MasterHack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    /*  https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg */
+  }
+}
+.heroC {
+  background-image: url("https://hrdmxylsfdxhrvmiajpd.supabase.in/storage/v1/object/public/ecommerce/img/MasterHack.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35rem;
+  background-attachment: fixed;
+  /*  https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg */
+}
+@media (max-width: 768px) {
+  .heroC {
+    background-image: url("https://hrdmxylsfdxhrvmiajpd.supabase.in/storage/v1/object/public/ecommerce/img/MasterHack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    /*  https://www.newegg.com/insider/wp-content/uploads/2020/08/newegg-tech-pc-component-wallpaper-4.jpg */
+  }
+}
+.aboutHero {
+  font-size: 4rem;
+}
+
+.responsive {
+  width: 80%;
+  height: 22rem;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.hover {
+  border-radius: 3px;
+  transition: 0.2s all;
+}
+
+.hover:hover {
+  transform: scale(1.08);
+  filter: grayscale(0%);
+}
+.hover2 {
+  border-radius: 3px;
+  transition: 0.2s all;
+}
+
+.hover2:hover {
+  transform: scale(1.01);
+  filter: grayscale(0%);
+}
+.aboutSubtitle {
+  font-size: 1.3rem;
+}
+
+.iconHover:hover {
+  transform: scale(1.08);
+  color: aqua;
+}
+
+/* Shopping Cart */
+.MobileOrder {
+  box-shadow: 0 0 2px 2px;
+}
+.cartmobiletwo {
+  display: none;
+}
+@media (max-width: 768px) {
+  .MobileOrder {
+    box-shadow: 0 0 1px 1px black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border: 0;
+    background-color: black;
+    border-radius: 0;
+  }
+  .MobilePrice {
+    position: fixed;
+    left: 0;
+    bottom: 2.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid #00ffff;
+  }
+  .MobileModal {
+    height: 100%;
+    margin-top: 2rem;
+  }
+  .MobileTrash {
+    display: flex;
+    align-items: initial;
+  }
+  .cartmobile {
+    display: none;
+  }
+  .cartmobiletwo {
+    display: flex;
+    border: 1px solid white;
+  }
+  .MobileLogin {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    border: 0;
+    background-color: black;
+    border-radius: 0;
+    margin: 0;
+  }
+  .mobilePositionItemCart {
+    margin-right: 3.5rem;
+  }
+}
+
+.itemInCart {
+  border-radius: 8px;
+}
+.imgcar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.trash:hover {
+  color: rgb(238, 70, 126);
+}
+
+.cuant:hover {
+  color: rgb(72, 219, 219);
+}
+.min-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.imgfield {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
+/* Login/registro */
+.backImgLoRe {
+  background-image: url("https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/sd47e0108469279fa/image/if04c20372f74a8f0/version/1589786817/image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 0.7rem;
+  margin-top: 2rem;
+  background-attachment: fixed;
+}
+
+.contentInput {
+  background-color: #f0f0f081;
+  border-radius: 10px;
+}
+.textshadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.733);
+}
+
+.loginForm {
+  font-weight: 600;
+}
+
+/* Navbar*/
+.navbar {
+  padding-bottom: 0;
+  border-bottom: 2px solid aqua;
+}
+
+.backgroundAqua {
+  background-color: aqua;
+}
+@media (max-width: 500px) {
+  .mobilenav {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/*  footer */
+.foot {
+  text-decoration: none;
+}
+
+.linkHover:hover {
+  color: aqua;
+}
+
+.aqua {
+  color: aqua;
+}
+
+.line {
+  border-top: 2px solid aqua;
+  margin-top: auto;
+}
+@media (max-width: 500px) {
+  .mobilefoot {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+}
+/*  Category */
+.heroCategory {
+  background-image: url("https://hrdmxylsfdxhrvmiajpd.supabase.in/storage/v1/object/public/ecommerce/img/backgroundoption3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  background-attachment: fixed;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .heroCategory {
+    background-image: url("https://hrdmxylsfdxhrvmiajpd.supabase.in/storage/v1/object/public/ecommerce/img/backgroundoption3.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+  }
+}
+.cardHover {
+  transition: all 0.4s;
+}
+.cardHover:hover {
+  transform: scale(1.02);
+}
+
+.borderHover:hover {
+  border: solid 2px rgb(0, 247, 255);
+}
+
+/*  Product */
+
+.stockPill {
+  background-color: aqua;
+  opacity: 80%;
+}
+.mobileCard {
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .productmobile {
+    max-height: 20rem;
+  }
+  .ocultElement {
+    display: none;
+  }
+  .mobileProductItem {
+    box-shadow: 0;
+  }
+  .mobilecardBody {
+    position: relative;
+    top: initial;
+  }
+  .mobileCard {
+    padding: 10px;
+  }
+  .productImg {
+    height: 14rem;
+  }
+}
+
+/*  Main */
+
+.discount {
+  font-size: 0.9rem;
+}
+
+.bgCarousel {
+  background-color: #000;
+}
+
+.price-pill {
+  color: aqua;
+}
+.toast {
+  color: #00ffff;
+}
+/* ADMIN */
+.side {
+  width: 280px;
+  height: 900px;
+}
+
+.tableHover:hover {
+  background-color: rgb(127, 209, 209);
+}
+.tableHeader {
+  background-color: rgb(54, 54, 54);
+}
+.tableHeight {
+  min-height: 700px;
+}
+.sidebarHeight {
+  min-height: 700px;
+}
+.list {
+  border: solid 1px white;
+  background-color: rgb(31, 30, 30);
+  opacity: 0.85;
+  color: white;
+}
+@media (max-width: 768px) {
+  .sidebAdmin {
+    min-height: 70px !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(19, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid aqua;
+    height: 5rem;
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  .Mobileorden {
+    max-height: 2rem;
+    margin-right: 10px;
+    margin-left: 2px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ocultMobile {
+    display: none;
+  }
+  .modalPaymentMobile {
+    height: 48rem;
+    padding: 0;
+    margin-top: 2.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .modalPaymentMobile {
+    height: 30rem;
+  }
+}
+
+.userDashboard {
+  background-color: rgb(4, 180, 180);
+}
+
+.productsDashboard {
+  background-color: rgb(4, 165, 165);
+}
+
+.categoriesDashboard {
+  background-color: rgb(4, 145, 145);
+}
+
+.ordersDashboard {
+  background-color: rgb(4, 122, 122);
+}
+
+.revenueDashboard {
+  background-color: rgb(2, 94, 94);
+}
+.firstTime {
+  border: 3px solid aqua;
+  cursor: pointer;
+}
+.widthFirstTime {
+  width: 100%;
+}
+.metricsDashboard {
+  background-color: rgb(2, 68, 68);
+}
+
+.dashboardHover:hover {
+  filter: grayscale(50%);
+  transform: scale(1.02);
+}
+
+.dashboardSize {
+  width: 15rem;
+}
+.orderSize {
+  width: 100%rem;
+}
+/* .adminf {
+  background-image: url("https://images2.alphacoders.com/977/977789.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.backgroundAdmin {
+  background-image: url("https://www.xtrafondos.com/wallpapers/resoluciones/20/triangulo-con-planetas_2560x1440_5534.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+/* MODALES */
+
+.btnAddProduct {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  font-weight: 700;
+}
+
+.btnAddProduct:hover {
+  color: white;
+  transform: scale(1.01);
+}
+
+.updateButton {
+  background-color: rgb(70, 69, 69);
+  color: white;
+}
+.updateButton:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.deleteButton:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(35, 35, 36, 0.698);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal.is-open {
+  display: flex;
+}
+.modal-container {
+  position: relative;
+  min-width: 320px;
+  max-width: 720px;
+  max-height: 720px;
+  min-height: 320px;
+  background-color: #fff;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.modale-close {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.modalForm {
+  text-align: start !important;
+}
+
+.modalSize {
+  width: 500px;
+}
+
+/* Sidebar */
+
+.sidebarHover:hover {
+  background-color: rgb(127, 209, 209);
+  color: black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: #070707;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  background: #c704ad;
+}
+
+#sidebar ul.components {
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+}
+
+#sidebar ul li a {
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: #7386d5;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+ul ul a {
+  font-size: 0.9em !important;
+  background: #6d7fcc;
+}
+
+.margin-top-extra {
+  margin-top: 5rem;
+}
+/* Payment */
+
+.close {
+  color: #000;
+  cursor: pointer;
+}
+
+.fee {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+  margin-right: 8px;
+}
+
+label.radio1 {
+  cursor: pointer;
+  width: 100%;
+  margin-right: 7px;
+}
+
+label.radio1 input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio1 span {
+  padding: 20px 12px;
+  border: 2px solid rgb(15, 17, 17);
+  display: inline-block;
+  color: rgb(16, 17, 17);
+  border-radius: 3px;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+label.radio1 input:checked + span {
+  border-color: rgb(1, 2, 2);
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.cancel {
+  text-decoration: none;
+  color: #070707;
+}
+.navbarComponents {
+  cursor: pointer;
+}
+.productImg {
+  height: 14rem;
+
+  object-fit: cover;
+}
+
+/* count */
+span {
+  cursor: pointer;
+}
+.number {
+  margin: 100px;
+}
+.minus,
+.plus {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hideOnPhone {
+    display: none;
+  }
+}
+
+.imgCarr {
+  object-fit: cover;
+  height: 700px;
+}
+@media (max-width: 768px) {
+  .imgCarr {
+    padding-top: 3rem;
+    height: 250px;
+  }
+}
+.popular-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: aqua;
+  color: black;
+}
+.out-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+}
+
+.quantityButton {
+  font-size: 0.7rem;
+}
+.loader {
+  position: absolute;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.min-height-body {
+  min-height: 1000px;
+}
+
+.height-success {
+  height: 700px;
+}
+.float-caption {
+  margin-bottom: 20%;
+}
+.underline {
+  width: 7rem;
+  height: 0.25rem;
+  background-color: rgb(17, 187, 187);
+}
+
